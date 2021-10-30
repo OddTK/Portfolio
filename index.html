@@ -15,10 +15,10 @@
         <nav class="navbar">
 
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Resume</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contactme">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
             </ul>
         </nav>
 
@@ -28,7 +28,7 @@
         </header>
 
     <main class="body">
-        <div class="about">
+        <div class="about bkg" id="about">
             <h1>About Me</h1>
             <hr>
             <div class="isabout">
@@ -41,24 +41,60 @@
             </div>
         </div>
 
-        <div class="work">
+        <div class="work bkg" id="work">
             <h1>Work</h1>
             <hr>
-            <p>hi</p>
+            <div class="iswork">
+                <div class="horiseon">
+                    <a href="https://oddtk.github.io/horiseon-code-refactor/" target="_blank"><img src="img/horiseon.png" alt="horiseon webpage sample"></a>
+                </div>
+                <div class="placeholder">
+                    <a href="https://via.placeholder.com/">
+                        <img src="https://via.placeholder.com/200/0072bb" alt="placeholder img 1">
+                    </a>
+                    <a href="https://via.placeholder.com/">
+                        <img src="https://via.placeholder.com/200/0072bb" alt="placeholder img 2"
+                        ></a>
+                    <a href="https://via.placeholder.com/">
+                        <img src="https://via.placeholder.com/200/0072bb" alt="placeholder img 3">
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="contact">
+        <div class="contactme bkg" id="contactme">
             <h1>Contact Me</h1>
             <hr>
-            <p>hi</p>
+            <img src="img/tk.png" alt="character profile photo of Jesus">
+            <div class="iscontact">
+                <form class="form">
+                    <input type="text" name="Name" placeholder="Full name">
+                    <br>
+                    <input type="text" name="Email" placeholder="Your email address">
+                    <br>
+                    <textarea placeholder="Leave me a message"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
 
-        <div class="resume">
+        <div class="resume bkg" id="resume">
             <h1>Resume</h1>
             <hr>
-            <p>hi</p>
+            <div class="isresume">
+            <ul>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/OddTK" target="_blank" >Github</a></li>
+                <li><a href="https://coursera.org/share/448e67a79f8c2a206dad422ff8b07702" target="_blank">Google IT Support</a></li>
+            </ul>
+            </div>
         </div>
     </main>
+
+    <footer id="footer">
+        <p>Created by OddTK. © 2021 </p>
+    </footer>
 
     </div>
 

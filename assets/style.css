@@ -2,12 +2,14 @@
 .container {
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
 }
 
 :root {
     --lgrey: rgb(206, 206, 206);
     --dgrey: grey;
     --white: white;
+    --border: 2px solid rgb(184, 102, 2);
 }
 
 .navbar {
@@ -67,7 +69,6 @@ hr {
     border-color: grey;
 }
 
-
 .body h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--dgrey);
@@ -78,10 +79,117 @@ hr {
     text-align: center;
 }
 
-.isabout {
-    margin-top: 10px;
+.isabout,
+.iswork,
+.iscontact,
+.isresume {
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 60%;
     height: 40%;
     margin: auto;
     font-family: sans-serif;
+}
+
+.isabout p {
+    margin-top: 50px;
+}
+
+.placeholder img {
+    white-space: nowrap;
+    padding: 20px 25px;
+    width: 25%;
+    height: 25%;
+}
+
+.horiseon img {
+    margin-top: 20px;
+    width: 60%;
+    height: 25%;
+    margin-left: 19%;
+}
+
+.iswork img:hover {
+    opacity: 0.3;
+}
+
+.form {
+    margin-top: 50px;
+    margin-left: 50%;
+    width: 100%;
+}
+
+.form input {
+    width: 45%;
+    height: 30px;
+    margin-top: 10px;
+    text-indent: 10px;
+    border: var(--border)
+}
+
+.form textarea {
+    width: 45%;
+    height: 75px;
+    margin-top: 10px;
+    text-indent: 10px;
+    border: var(--border)
+}
+
+.form button {
+    margin-top: 10px;
+    background: var(--dgrey);
+    border: none;
+    border-radius: 2px;
+}
+
+.form button:hover {
+    opacity: 0.2;
+    background: #b86602;
+    cursor: crosshair;
+}
+
+.contactme img {
+    margin-top: 35px;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 300px;
+}
+
+.isresume ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+
+.isresume ul li {
+    display: inline;
+    line-height: 60px;
+    padding: 0 0 10px;
+}
+
+.isresume ul li a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--dgrey);
+}
+
+.isresume ul li a:hover {
+    color: var(--lgrey);
+}
+
+.body .bkg:nth-child(even) {
+    background-color: var(--lgrey);
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--dgrey);
+    color: var(--white);
+    text-align: center;
 }
