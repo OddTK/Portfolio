@@ -81,11 +81,10 @@ hr {
 
 .isabout,
 .iswork,
-.iscontact,
 .isresume {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 60%;
+    width: 80%;
     height: 40%;
     margin: auto;
     font-family: sans-serif;
@@ -113,14 +112,23 @@ hr {
     opacity: 0.3;
 }
 
+.contactme {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
 .form {
-    margin-top: 50px;
-    margin-left: 50%;
-    width: 100%;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 33%;
 }
 
 .form input {
-    width: 45%;
+    width: 80%;
     height: 30px;
     margin-top: 10px;
     text-indent: 10px;
@@ -128,7 +136,7 @@ hr {
 }
 
 .form textarea {
-    width: 45%;
+    width: 80%;
     height: 75px;
     margin-top: 10px;
     text-indent: 10px;
@@ -148,12 +156,15 @@ hr {
     cursor: crosshair;
 }
 
+.iscontact {
+    width: 100%;
+}
+
 .contactme img {
     margin-top: 35px;
     width: 200px;
     height: 200px;
-    float: left;
-    margin-left: 300px;
+    margin-left: 43.5%;
 }
 
 .isresume ul {
@@ -186,7 +197,6 @@ hr {
 
 #footer {
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     background: var(--dgrey);
