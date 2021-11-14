@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesus Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
@@ -41,14 +42,14 @@
             </div>
         </div>
 
-        <div class="work bkg" id="work">
+        <div class="container work bkg" id="work">
             <h1>Work</h1>
             <hr>
-            <div class="iswork">
-                <div class="horiseon">
+            <div class="row iswork">
+                <div class="col-3 horiseon">
                     <a href="https://oddtk.github.io/horiseon-code-refactor/" target="_blank"><img src="img/horiseon.png" alt="horiseon webpage sample"></a>
                 </div>
-                <div class="placeholder">
+                <div style="text-align:center" class="placeholder">
                     <a href="https://via.placeholder.com/">
                         <img src="https://via.placeholder.com/200/0072bb" alt="placeholder img 1">
                     </a>
@@ -65,9 +66,12 @@
         <div class="contactme bkg" id="contactme">
             <h1>Contact Me</h1>
             <hr>
-            <img src="img/tk.png" alt="character profile photo of Jesus">
+            <div class="container">
+                <div style="text-align:center;">
+                    <img src="img/tk.png" alt="character profile photo of Jesus">
+                </div>
             <div class="iscontact">
-                <form class="form">
+                <form class="row col-12 form">
                     <input type="text" name="Name" placeholder="Full name">
                     <br>
                     <input type="text" name="Email" placeholder="Your email address">
@@ -76,6 +80,7 @@
                     <br>
                     <button type="submit">Submit</button>
                 </form>
+            </div>
             </div>
         </div>
 
